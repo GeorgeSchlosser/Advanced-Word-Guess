@@ -1,0 +1,23 @@
+{
+  "name": "Advanced-Word-Guess",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgeSchlosser/Advanced-Word-Guess.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeorgeSchlosser/Advanced-Word-Guess/issues"
+  },
+  "homepage": "https://github.com/GeorgeSchlosser/Advanced-Word-Guess#readme",
+  "dependencies": {
+    "inquirer": "^6.3.1"
+  }
+}
