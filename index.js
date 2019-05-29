@@ -1,5 +1,5 @@
 // bring in inquirer & Word.js
-var inquirer = require(inquirer);
+var inquirer = require("inquirer");
 var word = require("./Word.js")
 
 // GLOBAL VARIABLES
@@ -17,5 +17,9 @@ var wins = 0;
 
 
 
-// FUNCTIONS
+// FUNCTIONS/SECONDARY PROCESSES
 // ===============================================================================
+// select random word
+var currentWord = wordbank[Math.floor(Math.random() * wordbank.length)];
+console.log(currentWord);
+// run current word through constructor
