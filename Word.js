@@ -1,16 +1,16 @@
 // bring in Letter.js file
-var letter = require("./Letter.js")
+var Letter = require("./Letter.js")
 
 function Word(word) {
     // current word
-    // this.word = word;
+    this.word = word;
     // array of new letter objects representing letters of current word
     this.letterObjArr = [];
     // function to fill array w/ letters of current word
     // this.arrFiller = function() {
     for (let i = 0; i < word.length; i++) {
         var letter = new Letter(word[i]);
-        this.letterObjArr.push(char);
+        this.letterObjArr.push(letter);
     };
     // };
 
@@ -35,5 +35,8 @@ function Word(word) {
         }
     };
 };
+
+// var test = new Word(test);
+// console.log(test);
 
 module.exports = Word;

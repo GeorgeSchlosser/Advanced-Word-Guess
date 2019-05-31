@@ -14,12 +14,24 @@ function Letter(char) {
     };
     // function that takes user guess as argument, checks against correct letters, &  updates crctGuess to true if correct
     this.letterChecker = function (guess) {
+        console.log("guess:", guess);
+        console.log("this.char:", this.char)
         if (guess === this.char) {
             this.crctGuess = true;
         } else {
             this.crctGuess = false;
-        }
+        };
+        
+        console.log(guess)
     };
 };
 
 module.exports = Letter;
+
+// testing
+var test = new Letter("t");
+console.log(test);
+test.letterChecker("f");
+console.log(test);
+test.letterChecker("t");
+console.log(test);
